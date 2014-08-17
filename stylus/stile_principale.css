@@ -1,0 +1,329 @@
+body {
+  font-size: 16px;
+}
+nav {
+  height: 120px;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+header {
+  height: 681px;
+  width: 100%;
+  position: relative;
+}
+section {
+  height: 1140px;
+}
+#logo_nviba {
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+  height: 66px;
+}
+#preload {
+  display: none;
+}
+#landingText {
+  color: #fff;
+  font-wieght: 700;
+  font-size: 96px;
+  font-family: 'Rokkitt', serif;
+  left: 50%;
+  margin: 0 0 0 -500px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50px;
+  width: 1000px;
+  z-index: 120;
+}
+#menu {
+  height: 54px;
+  width: 100%;
+  background: #e21a22;
+}
+#buttons {
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 960px;
+  text-align: center;
+  padding-top: 0.6em;
+}
+.item {
+  display: inline;
+  margin: auto 3px;
+}
+.item a {
+  text-decoration: none;
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+}
+#logo_content {
+  width: 100%;
+  height: 66px;
+}
+#logo_square {
+  width: 66px;
+  height: 76px;
+  background: #e21a22;
+  border-radius: 5px;
+  margin-top: -10px;
+}
+#clouds {
+  background: url("../assets/header_nviba.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 681px;
+  width: 100%;
+  top: 0;
+}
+.item {
+  display: inline;
+  margin: auto 3px;
+}
+.item a {
+  text-decoration: none;
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+}
+.logo {
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.scrollblock {
+  width: 100%;
+}
+.white_birds img {
+  height: 700px;
+  position: absolute;
+  width: 100%;
+  z-index: 90;
+}
+.red_birds img {
+  height: 700px;
+  position: absolute;
+  width: 100%;
+  z-index: -90;
+}
+.cat_animation {
+  bottom: 0;
+  height: 255px;
+  position: absolute;
+  right: 0;
+  width: 370px;
+}
+.contact_us {
+  background: url("../assets/contactus_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form_content {
+  background: #e4e4e4;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  padding-top: 9em;
+  top: 400px;
+}
+.izq {
+  float: left;
+  width: 300px;
+  padding-left: 10em;
+}
+.izq a {
+  text-decoration: none;
+  color: #f90000;
+}
+.izq h1 {
+  color: #f90000;
+}
+.der {
+  float: right;
+  width: 345px;
+}
+.der form {
+  width: 26em;
+}
+.der input {
+  margin: 0.5em 2em;
+  border-radius: 4px;
+  width: 22em;
+  height: 2em;
+  border: 1px solid #b6b6b6;
+  color: #000;
+  padding: 0.2em 1em;
+}
+.der textarea {
+  margin: 1.5em 2em;
+  border-radius: 4px;
+  max-width: 22em;
+  min-width: 22em;
+  max-height: 11em;
+  min-height: 11em;
+  border: 1px solid #b6b6b6;
+  padding: 1em 1em;
+}
+.submit_btn {
+  width: 6.2em !important;
+  height: 2.5em;
+  background-color: #f90000;
+  color: #fff !important;
+  border-radius: 0px !important;
+  border: 1px solid transparent !important;
+  float: right;
+}
+.icons {
+  position: relative;
+  top: 500px;
+  color: #999;
+  font-size: 4em;
+  left: 30px;
+}
+.icon-mail_icon {
+  float: left;
+  cursor: pointer;
+}
+.icon-job_icon {
+  float: right;
+  cursor: pointer;
+}
+.cat1 {
+  background: url("../assets/cat/c1.png");
+  position: absolute;
+  right: 0px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat2 {
+  background: url("../assets/cat/c2.png");
+  position: absolute;
+  right: 45px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat3 {
+  background: url("../assets/cat/c3.png");
+  position: absolute;
+  right: 90px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat4 {
+  background: url("../assets/cat/c4.png");
+  position: absolute;
+  right: 135px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat5 {
+  background: url("../assets/cat/c5.png");
+  position: absolute;
+  right: 180px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat6 {
+  background: url("../assets/cat/c6.png");
+  position: absolute;
+  right: 225px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat7 {
+  background: url("../assets/cat/c7.png");
+  position: absolute;
+  right: 270px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat8 {
+  background: url("../assets/cat/c8.png");
+  position: absolute;
+  right: 315px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat9 {
+  background: url("../assets/cat/c9.png");
+  position: absolute;
+  right: 360px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat10 {
+  background: url("../assets/cat/c10.png");
+  position: absolute;
+  right: 405px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.cat11 {
+  background: url("../assets/cat/c11.png");
+  position: absolute;
+  right: 450px;
+  background-repeat: no-repeat;
+  bottom: -10px;
+}
+.wrapper {
+  width: 960px;
+  margin: auto 0;
+}
+#profile {
+  height: 1200px;
+  background: url("../assets/bw_clouds.jpg");
+  margin-top: -76px;
+  z-index: 0;
+}
+#profile_content {
+  position: absolute;
+  bottom: 0;
+}
+#elpopo {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: -11;
+}
+#cholula {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: -10;
+}
+#reach_text {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  color: #000;
+  z-index: 1;
+}
+#reach_text h3 {
+  margin: 0;
+  width: 450px;
+  font-family: 'Rokkitt', serif;
+  font-size: 5em;
+}
+#reach_paragraph {
+  width: 100%;
+  background: #fff;
+  height: 450px;
+}
+#reach_paragraph p {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 1.1em;
+}
