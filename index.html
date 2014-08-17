@@ -12,10 +12,16 @@
     <link rel="stylesheet" type="text/css" href="css/tabs.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />   
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+
     <script src="http://nviba-media.stagingblender.com/js/jquery-1.8.3.min.js"></script>
-    <script src="http://nviba-media.stagingblender.com/js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    
+
 </head>
 <body>
+
 
     <div id="preload">
         <img src="assets/cat/c1.png" alt="">
@@ -88,6 +94,7 @@
         <figure class="skiador">
             <img src="assets/svg/ski.svg" alt="">
         </figure>
+
         <script>
         jQuery(document).ready(function(){
             /* Tabs, Fancybox */    
@@ -123,23 +130,35 @@
             }); 
         });     
     </script>
+
         <article id="portfolio_content">
             <span class="title_request"> OUR PLAYGROUND</span>
             <!-- Content -->
             <div class="main-content">
-                <div class="container">
+                <div class="container"> 
+
+            <!-- TABS SERVICES -->
+
+
                     <!-- Tabs -->           
-                        <div class="top-tabs">
-                            <ul>
-                                <li class="active"><a href="#logosarea">LOGOS</a></li>
-                                <li><a href="#websites">WEBSITES</a></li>
-                                <li><a href="#prints">PRINT</a></li>
+                       <!-- <div class="top-tabs"> -->
+                            <!-- the tabs -->
+                            <ul class="tabs_portfolio">
+                                <li class="active"><a href="#">LOGOS</a></li>
+                                <li><a href="#">WEBSITES</a></li>
+                                <li><a href="#">PRINT</a></li>
                             </ul>
+
                             <div class="clear">&nbsp;</div>
-                        </div>                      
-                        <div class="content-tabs">
+                       <!--  </div>   -->     
+
+                        <!-- tab "panes" -->  
+                    <div class="panes_portfolio">
+
+                        <div> <!-- Abre panel Logos-->       
+                        
                             <!-- Logos -->  
-                            <div id="logosarea" class="tab active">
+                            <div id="logosarea">
                                 <ul>
                                     <li>
                                         <a href="#logos1" class="fancybox"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/logo-1.jpg"></a>
@@ -297,9 +316,14 @@
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/logo-15.jpg"></a></li>
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/logo-16.jpg"></a></li>
                                 </ul>       
-                            </div>                      
+                            </div>   
+
+                        </div>    <!-- Cierra tab logos-->
+                        
+                        <div>
+                        
                             <!-- Websites -->
-                            <div id="websites" class="tab">
+                            <div id="websites">
                                 <ul class="col">
                                     <li>
                                         <a href="#websites1" class="fancybox"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/websites-1.jpg"></a>
@@ -366,9 +390,11 @@
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/websites-13.jpg"></a></li>
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/websites-14.jpg"></a></li>
                                 </ul>                           
-                            </div>                      
+                            </div>  
+                        </div>  
+                        <div>               
                             <!-- Print -->
-                            <div id="prints" class="tab">
+                            <div id="prints">
                                 <ul class="col">
                                     <li><a href="#prints1" class="fancybox"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/print-1.jpg"></a>
                                         <div class="hide">
@@ -413,13 +439,17 @@
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/print-12.jpg"></a></li>
                                 </ul>
                             </div>
-                        </div>          
+                        </div>
+
+                    </div> <!-- Termian div contenedor de los panels -->
+
                     <div class="clear">&nbsp;</div>
                 </div>          
             </div>
         </article>
     </section>
-    <section id="services" class="scrollblock relative">
+
+   <section id="services" class="scrollblock relative">
         <figure id="ovni">
             <img src="assets/svg/ovni.svg" alt="">
         </figure>
@@ -649,33 +679,17 @@
               </ul>
             <!-- TABS SERVICES -->
         </section>
-            
-        
-        </article>
     </section>
+
     <section id="moreclients" class="scrollblock relative">
         <figure id="porcino">
             <img src="assets/svg/flypig.svg" alt="">
         </figure> 
         <article id="more_content">
             <span class="title_request">MORE CLIENTS</span>
-            <!-- TABS SERVICES -->
-            <!-- the tabs -->
-              <ul class="tabs_dos">
-                <li><a href="#">Tab 1</a></li>
-                <li><a href="#">Tab 2</a></li>
-                <li><a href="#">Tab 3</a></li>
-              </ul>
-             
-              <!-- tab "panes" -->
-              <div class="panes_dos">
-                <div>pane 1 content</div>
-                <div>pane 2 content</div>
-                <div>pane 3 content</div>
-              </div>
-            <!-- TABS SERVICES -->
         </article>
     </section>
+
 	<section id="request" class="scrollblock">
         <figure class="clavadista">
             <img src="assets/svg/clavadista.svg" alt="My God!">   
@@ -726,46 +740,65 @@
                     <p>FAX. <strong> 514.788.13.16 </strong> </p>
                     <a href=""> <strong>info@nviba.com </strong> </a> 
                 </article>
-                <article class="der">
-                    <form action="" method="post">
-                        <input type="text" placeholder="NAME">
-                        <input type="email" placeholder="E-MAIL">
-                        <input type="text" placeholder="SUBJECT">
-                        <textarea placeholder="MESSAGE"></textarea>
-                        <input class="submit_btn" type="submit" value="SEND">
-                    </form>
-                </article>
+                
                  <article class="der">
-                    <div class="contactTtl">
-                        Careers                 </div>
-                    <input type="text" name="name" placeholder="Name">
-                        <div class="contactBox">
-                            <p>Area of Expertise</p>
-                            <div>
-                                <label for="frontEnd">Web Design & Integration</label><input type="checkbox" id="frontEnd" name="design_integration">
-                            </div>
-                            <div>
-                                <label for="backEnd">PHP/MySQL Programming</label><input type="checkbox" id="backEnd" name="php_mysql">
-                            </div>
-                            <div>
-                                <label for="graphicDesign">Graphic Design</label><input type="checkbox" id="graphicDesign" name="graphic_design">
-                            </div>
-                            <div>
-                                <label for="sales">Sales & Management</label><input type="checkbox" id="sales" name="sales">
-                            </div>
+                    <!-- TABS SERVICES -->
+                      <!-- tab "panes" -->
+                      <div class="panes_contactus">
+                        <div>
+                            <form action="" method="post">
+                            <input type="text" placeholder="NAME">
+                            <input type="email" placeholder="E-MAIL">
+                            <input type="text" placeholder="SUBJECT">
+                            <textarea placeholder="MESSAGE"></textarea>
+                            <input class="submit_btn" type="submit" value="SEND">
+                            </form>
                         </div>
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="text" name="phone" placeholder="Phone">
-                    <div class="contactBox">
-                        <label for="cv">CV (PDF only)</label><input type="file" id="cv">
-                    </div>
-                    <input class="submit_btn" type="submit" value="SEND">
-                </div>
+                         <!-- tab "panel 2" -->
+                        <div>
+                            <div class="contactTtl">Careers</div>
+                            <input type="text" name="name" placeholder="Name">
+                            <div class="contactBox">
+                            <p>Area of Expertise</p>
+                            <div class="career_chkbx">
+                                <label for="frontEnd">Web Design & Integration</label><input class="checkbx" type="checkbox" id="frontEnd" name="design_integration">
+                            </div>
+                            <div class="career_chkbx">
+                                <label for="backEnd">PHP/MySQL Programming</label><input class="checkbx"type="checkbox" id="backEnd" name="php_mysql">
+                            </div>
+                            <div class="career_chkbx">
+                                <label for="graphicDesign">Graphic Design</label><input class="checkbx" type="checkbox" id="graphicDesign" name="graphic_design">
+                            </div>
+                            <div class="career_chkbx">
+                                <label for="sales">Sales & Management</label><input class="checkbx" type="checkbox" id="sales" name="sales">
+                            </div>
+                           </div>
+                            <input type="text" name="email" placeholder="Email">
+                            <input type="text" name="phone" placeholder="Phone">
+                            <div class="contactBox">
+                                <label for="cv">CV (PDF only)</label><input class="file_label" type="file" id="cv">
+                            </div>
+                            <input class="submit_btn" type="submit" value="SEND">
+                            </div>
+                            </div>
+                      </div>
+                    <!-- TABS SERVICES -->
+
+                       <!-- the tabs -->
+
+                     
+                     
+                        <article class="icons">
+                             <ul class="tabs_contactus">
+                                <li><a class="icon-mail_icon" href="#"></a></li>
+                                <li><a class="icon-job_icon" href="#"></a></li>
+                             </ul>
+                        </article>
+                     
+                     
+
                 </article>
-                <article class="icons">
-                    <div class="icon-mail_icon"> </div>
-                    <div class="icon-job_icon"> </div>
-                </article>
+
             </div>
         </article>   
     </section>
@@ -794,31 +827,57 @@
      <div id="red_underline"></div>
     </footer>
 </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
     <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.portfolio.js"></script>  
     <script src="js/jquery.sticky.js"></script>
+    <script src="js/slide.js"></script>
     <script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
+   jQuery.browser={};(function(){jQuery.browser.msie=false;
+jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
+jQuery.browser.msie=false;jQuery.browser.version=RegExp.$1;}})();
+
     $(document).ready(function(){
         $(".sticker").sticky({topSpacing:0});
         $("ul.tabs_in").tabs("div.panes_in > div");
-        $("ul.tabs_dos").tabs("div.panes_dos > div");
+        $("ul.tabs_contactus").tabs("div.panes_contactus > div");
+        $("ul.tabs_portfolio").tabs("div.panes_portfolio > div");
     });
     </script>
     <script>
+
+$(document).ready(function(){
+    slider = $('.projectSlideshow').bxSlider({
+        'pager': true,
+        'controls': false,
+        'useCSS': false,
+        'nextSelector': $('.sliderControls'),
+        'prevSelector': $('.sliderControls'),
+        'mode':'fade'
+    });
+});
+
+
     $(document).ready(function(){
         $(".sticker").sticky({topSpacing:0});
         $("ul.tabs_in").tabs("div.panes_in > div");
-        $("ul.tabs_dos").tabs("div.panes_dos > div");
+        $("ul.tabs_contactus").tabs("div.panes_contactus > div");
+        $("ul.tabs_portfolio").tabs("div.panes_portfolio > div");
     });
+
     $("a.fancybox").fancybox();
+
+    $('.project').bxSlider();
+
     </script>
     <script type="text/javascript">
     $(document).ready(function(){
@@ -826,6 +885,7 @@
                 var scrollorama = $.scrollorama({
                 blocks:'.scrollblock'
                 });
+
             scrollorama
             .animate('#landingText',{duration:500, property:'opacity', start:1,end:0})
             .animate('#landingText',{duration:500, property:'top', start:50,end:-100})
@@ -937,10 +997,11 @@
 });
 	</script>
 	
-<script type="text/javascript" src="http://c520866.r66.cf2.rackcdn.com/1/js/easy_rotator.min.js"></script>
+    <script type="text/javascript" src="http://c520866.r66.cf2.rackcdn.com/1/js/easy_rotator.min.js"></script>
 <script type="text/javascript">
 er_$144('ul.ui-tabs-nav>li>a').click(function(){ setTimeout(er_resetPositions, 100); });
 </script>
+    
 	
 </body>
 </html>
