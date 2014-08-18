@@ -267,10 +267,10 @@
 	background-image: linear-gradient(to bottom, #F8F8F8 0%, #DCDCDC 100%);
 	padding-top: 30px;
 }
-.top-tabs {
+.tabs_portfolio {
 	padding: 5px 30px 25px;	
 }
-.top-tabs ul li {
+.tabs_portfolio li {
 	color: #ec1e2c;
 	font: 400 21px/120% 'roboto';
 	display: inline-block;
@@ -281,11 +281,13 @@
 	text-transform: uppercase;
 	width: 150px;
 }
-.top-tabs ul li a {
+.tabs_portfolio li a {
 	color: #ec1e2c;
+	margin-top: 2em;
 	display: block;
+	text-decoration: none;
 }
-.top-tabs ul li a:hover, .top-tabs ul li.active a {
+.tabs_portfolio li a:hover, .top-tabs li.active a {
 	background: #ec1e2c;
 	color: #fff;
 }
@@ -298,9 +300,15 @@
 .tab.active {
 	display: block;
 }
-.tab ul li {
-	float: left;
+.panes_portfolio ul li {
+	position: relative;
 	list-style: none;
+	display: inline-block;
+}
+
+.panes_portfolio ul li a img{
+	width: auto;
+	height: 190px;
 }
 /* Fancybox */
 .info {
