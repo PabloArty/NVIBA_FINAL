@@ -97,14 +97,6 @@
 
         <script>
         jQuery(document).ready(function(){
-            /* Tabs, Fancybox */    
-            jQuery('.top-tabs ul li a').on('click', function(){
-                var elem = jQuery(this).attr('href');
-                jQuery('.tab, .top-tabs ul li').removeClass('active');              
-                jQuery(this).parents('li').addClass('active');
-                jQuery(elem).addClass('active');
-                return false;
-            }); 
             
             jQuery(".fancybox").fancybox({
                 openEffect  : 'none',
@@ -126,8 +118,7 @@
                         speed: 1000
                     });
                 },      
-                scrolling: 'no'
-            }); 
+                scrolling: 'yes'
         });     
     </script>
 
@@ -633,7 +624,7 @@
     </footer>
 </div>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+   
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
@@ -641,16 +632,11 @@
 	<script src="js/jquery.scrollorama.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/jquery.portfolio.js"></script>  
     <script src="js/jquery.sticky.js"></script>
     <script src="js/slide.js"></script>
     <script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js">
     </script>
     <script>
-   jQuery.browser={};(function(){jQuery.browser.msie=false;
-jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
-jQuery.browser.msie=false;jQuery.browser.version=RegExp.$1;}})();
-
     $(document).ready(function(){
         $(".sticker").sticky({topSpacing:0});
         $("ul.tabs_in").tabs("div.panes_in > div");
@@ -680,13 +666,11 @@ $(document).ready(function(){
     });
 
     $("a.fancybox").fancybox();
-
     $('.project').bxSlider();
 
     </script>
     <script type="text/javascript">
     $(document).ready(function(){
-            $(document).ready(function() {
                 var scrollorama = $.scrollorama({
                 blocks:'.scrollblock'
                 });
@@ -722,7 +706,6 @@ $(document).ready(function(){
             .animate('#ovni img',{duration:2000, property:'left', start:100, end:2000})
             .animate('#porcino img',{delay:100, duration:600, property:'top',start:600 , end:-50})
             .animate('#porcino img',{delay:100, duration:600, property:'left',start:1280 , end:200})
-            });
         });
     </script>
 	<script type="text/javascript">
